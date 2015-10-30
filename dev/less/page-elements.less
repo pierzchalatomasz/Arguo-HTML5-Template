@@ -1,0 +1,466 @@
+/*
+**
+** 4. Page Elements Styles
+**
+*/
+
+// Blog Elements
+
+.blog-element {
+  position: relative;
+  margin-bottom: 0;
+
+  .post-thumbnail {
+    position: relative;
+  }
+
+  .post-date {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: @color;
+    color: #fff;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+
+    .day {
+      margin-bottom: 0;
+      margin-top: 7px;
+    }
+
+    .month {
+      margin-top: 0;
+    }
+  }
+
+  .post-info {
+    font-weight: 400;
+  }
+}
+
+.blog-element.blog-post {
+  margin-bottom: 0;
+}
+
+// Carousel
+
+.carousel {
+  .carousel-control {
+    opacity: 1;
+    text-shadow: none;
+
+    .slider-control.next {
+      position: absolute;
+      top: 50%;
+      right: 30px;
+    }
+
+    .slider-control.prev {
+      position: absolute;
+      top: 50%;
+      left: 30px;
+    }
+  }
+}
+
+// Color Cards
+
+.color-cards-row {
+  max-width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+
+  .color-card {
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    .easing;
+  }
+
+  .color-card-1 {
+    background: @color;
+  }
+
+  .color-card-2 {
+    background: darken( @color, 2.5% );
+  }
+
+  .color-card-3 {
+    background: darken( @color, 5% );
+  }
+
+  .color-card-4 {
+    background: darken( @color, 7.5% );
+  }
+
+  .color-card-5 {
+    background: darken( @color, 10% );
+  }
+
+  .color-card-6 {
+    background: darken( @color, 12.5% );
+  }
+}
+
+// Counter
+
+.counter {
+  text-align: center;
+
+  .counter-number {
+    letter-spacing: 3px;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 900;
+  }
+
+  .counter-desc {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+  }
+
+  .divider {
+    height: 2px;
+    background: #444;
+    width: 60px;
+    margin: 13px auto;
+    margin-bottom: 26px;
+  }
+}
+
+// Feature
+
+.feature {
+
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+    background: @color;
+    color: #fff;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  .feature-body {
+    padding-left: 30px;
+  }
+
+}
+
+// Feature Box
+
+.feature-box {
+
+  padding: @baseline * 2;
+  text-align: center;
+  background: #fff;
+
+  .icon-wrapper {
+    width: 100px;
+    height: 100px;
+    border: 1px solid @color;
+    margin: auto;
+
+    i {
+      line-height: 100px;
+    }
+  }
+
+  .feature-box-title {
+    margin-top: 13px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+}
+
+// Ordered List
+
+.ordered-list {
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding-top: 0;
+    margin: 0;
+    .space;
+  }
+
+  li:last-child {
+    padding-bottom: 0;
+  }
+}
+
+// Progress Bar
+
+.ft-progress-bar {
+
+  .progress-bar-inner {
+    height: 15px;
+    background: #999;
+
+    .bar-percentage {
+      width: 0;
+      background: @color;
+      height: 100%;
+
+      .easing;
+    }
+  }
+}
+
+// Team Member
+
+.team-member {
+
+  .team-member-image {
+    overflow: hidden;
+  }
+
+  .team-member-image img {
+    .easing;
+  }
+
+  .team-member-name {
+    font-weight: 900;
+  }
+
+  .team-member-content {
+    margin-bottom: 0;
+  }
+
+  .team-member-social-icons {
+    text-align: center;
+    margin-left: -10px;
+
+    a {
+      padding: 0 10px;
+      color: #fff;
+    }
+
+    a:hover {
+      color: @color;
+    }
+  }
+}
+
+.team-member:hover .team-member-image img {
+  .zoom;
+}
+
+// Testimonial
+
+.testimonials-slider {
+  height: 0;
+  overflow: hidden;
+}
+
+.testimonial {
+  float:left;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  .triangle {
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    border-top: 7px solid;
+    border-bottom: 7px solid;
+    border-right: 10px solid;
+    border-color: #fff #e8e8e8 transparent transparent;
+  }
+
+  .testimonial-content {
+    border: 1px solid #e1e1e1;
+    padding: 15px 25px;
+    background: #fff;
+
+    p {
+      margin-top: 0;
+    }
+
+    .testimonial-author {
+      margin-bottom: 0;
+      font-weight: 700;
+    }
+  }
+}
+
+// Pricing Table
+
+.pricing-table {
+  border: 1px solid #e1e1e1;
+  text-align: center;
+
+  .best-plan {
+    width: 70px;
+    height: 70px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 70px;
+    background: @color;
+    color: #fff;
+    position: absolute;
+    top: -15px;
+    right: 0;
+  }
+
+  .pricing-table-header {
+    padding: 26px 0;
+    background: #f8f8f8;
+    border-bottom: 5px solid @color;
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .pricing-table-content {
+    background: #f8f8f8;
+    padding-bottom: 30px;
+    border-top: 0;
+
+    .price-wrapper {
+      padding: 13px 0;
+      background: #f0f0f0;
+
+      .price {
+        margin: 0;
+        font-size: 40px;
+        display: inline-block;
+      }
+
+      .per-unit {
+        margin: 0;
+        display: inline-block;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      color: #777;
+
+      li {
+        border-bottom: 1px solid #e1e1e1;
+        padding: 15px 0;
+      }
+
+      li:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+}
+
+// Promo Box
+
+.promo-box {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+
+  .content-wrapper.col-md-8 {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    float: none;
+
+    .content {
+      margin: 0;
+    }
+  }
+
+  .button-wrapper.col-md-4 {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .promo-box {
+    display: block;
+
+    .content-wrapper.col-md-8 {
+      display: block;
+    }
+
+    .button-wrapper.col-md-4 {
+      display: block;
+
+      .btn.pull-right {
+        float: none !important;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+// Services
+
+.services {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+
+  .service {
+    .horizontal-line {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      z-index: 1;
+      width: 100%;
+      height: 1px;
+      background: #e1e1e1;
+    }
+
+    @media screen and ( max-width: 991px ) {
+      .horizontal-line {
+        display: none;
+      }
+    }
+
+    .icon-wrapper {
+      position: relative;
+      z-index: 2;
+      background: @color;
+      text-align: center;
+      height: 160px;
+      width: 160px;
+      line-height: 180px;
+      margin: 0 auto;
+      border: 5px solid rgba(100,0,0,0.3);
+      .easing;
+    }
+  }
+
+  .service:last-child {
+    .horizontal-line {
+      left: 0;
+      width: 50%;
+    }
+  }
+
+  .service:first-child {
+    .horizontal-line {
+      width: 50%;
+    }
+  }
+
+  .service:hover {
+    .icon-wrapper {
+      transform: rotate(360deg);
+    }
+  }
+}

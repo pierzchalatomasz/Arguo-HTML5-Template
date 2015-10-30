@@ -1,0 +1,107 @@
+/*
+**
+** 7. Sidebar Styles
+**
+*/
+
+.sidebar {
+  margin-bottom: 4 * @baseline * ( -1 );
+}
+
+/*
+** Widgets
+*/
+
+.widget {
+  padding-bottom: @baseline * 4;
+}
+
+.widget .widget-title {
+  margin-top: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+// Recent Posts & Categories
+
+.widget-recent-posts, .widget-categories {
+  a {
+    color: #777;
+
+    i {
+      padding-right: 5px;
+    }
+  }
+
+  a:hover {
+    color: @color;
+  }
+
+  hr {
+    margin: 10px 0;
+  }
+}
+
+// Recent Projects
+
+.widget-recent-projects {
+  .portfolio-widget-row {
+    margin: 0;
+
+    .portfolio-widget-item {
+      padding: 0;
+      overflow: hidden;
+
+      img {
+        .easing;
+      }
+    }
+
+    .portfolio-widget-item:hover {
+      img {
+        .zoom;
+      }
+    }
+  }
+}
+
+// Tags
+
+.widget-tag {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px 0;
+  background: #e1e1e1;
+  color: #777;
+}
+
+.widget-tag:hover {
+  color: #fff;
+  background: @color;
+  border-color: @color;
+}
+
+/*
+** Search Box
+*/
+
+.search-box {
+  background: #fff;
+  font-weight: normal;
+  color: #777;
+  width: 100%;
+
+  .search-box-search {
+    width: 80%;
+  }
+
+  .search-box-send {
+    background: @color;
+    color: #fff;
+    height: 54px;
+    width: 20%;
+    line-height: 54px;
+    text-align: center;
+  }
+
+}

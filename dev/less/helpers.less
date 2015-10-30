@@ -1,0 +1,74 @@
+/*
+**
+** 9. Helpers
+**
+*/
+
+.color {
+  color: @color;
+}
+
+.gray {
+  color: #999;
+}
+
+.mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  top: 0;
+  z-index: 2;
+}
+
+.space {
+  padding-bottom: @space;
+}
+
+.double-space {
+  padding-bottom: @space * 2;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.display-none {
+  display: none;
+}
+
+.easing {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.easing-fast {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.zoom( @scale: 1.2 ) {
+  transform: scale( @scale );
+  -moz-transform: scale( @scale );
+  -webkit-transform: scale( @scale );
+  -o-transform: scale( @scale );
+}
+
+.animation-infinite {
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+}
+
+.animation-duration {
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -o-animation-duration: 4s;
+}

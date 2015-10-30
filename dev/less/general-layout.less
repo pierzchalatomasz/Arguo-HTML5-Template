@@ -1,0 +1,308 @@
+/*
+**
+** 3. General Layout Styles
+**
+*/
+
+/*
+** General Layout
+*/
+
+.fullwidth-section {
+  background: #fff;
+
+  .section-inner {
+    padding: 70px 0;
+  }
+
+  .section-inner.no-padding {
+    padding: 0;
+  }
+
+  .section-inner.no-padding-bottom {
+    padding-bottom: 0;
+  }
+
+  .section-inner.more-padding {
+    padding: 120px 0;
+  }
+}
+
+.section-main-color {
+  background: @color;
+  color: #fff;
+}
+
+.section-gray {
+  background: #f0f0f0;
+}
+
+.section-dark {
+  background: #222;
+}
+
+.fullwidth-section.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.parallax {
+  background-attachment: fixed !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-section {
+  input[type="text"], textarea {
+    background: none;
+  }
+}
+
+.section-title {
+  padding-bottom: @baseline * 4;
+
+  .section-title-inner.col-md-4 {
+    padding-right: 30px;
+  }
+
+  .section-title-inner {
+    text-align: center;
+
+    .title {
+      margin-top: 0px;
+      text-transform: uppercase;
+      font-weight: 100;
+      font-size: 70px;
+      margin: 0;
+      .second-font;
+    }
+
+    .subtitle {
+      font-weight: 300;
+      letter-spacing: 1px;
+      color: #aaa;
+      letter-spacing: 5px;
+      margin-left: 5px;
+      display: inline-block;
+      border-radius: 5px;
+    }
+
+    .divider {
+      margin: 26px auto;
+      width: 60px;
+      background: #e1e1e1;
+      height: 2px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-title {
+    .section-title-inner {
+      .title {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+.section-dark, .image-section {
+  .section-title {
+    color: #fff;
+
+    .section-title-inner {
+      text-align: center;
+
+      .divider {
+        background: #444;
+      }
+    }
+  }
+}
+
+.image-section {
+  color: #f3f3f3;
+}
+
+.overlay-pattern {
+  background-repeat: repeat;
+  background-image: url( '../img/patterns/overlay-pattern.png' );
+  background-color: rgba( 0, 0, 0, 0.6 );
+}
+
+.pattern-1 {
+  background-repeat: repeat;
+  background-image: url( '../img/patterns/blackmamba.png' );
+  background-color: #212121;
+}
+
+.pattern-2 {
+  background-repeat: repeat;
+  background-image: url( '../img/patterns/pw_maze_black.png' );
+  background-color: #212121;
+}
+
+.pattern-3 {
+  background-repeat: repeat;
+  background-image: url( '../img/patterns/stripe.png' );
+  background-color: #fff;
+}
+
+.scroll-to-top {
+  background: @color;
+  color: #fff;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 999;
+  border: 1px solid lighten( @color, 5% );
+  border-bottom: 3px solid darken( @color, 10% );
+  cursor: pointer;
+}
+
+.slider-control {
+  border: 1px solid @color;
+  color: @color;
+  text-align: center;
+  line-height: 36px;
+  height: 39px;
+  width: 39px;
+  display: inline-block;
+}
+
+.slider-pagination {
+  text-align: center;
+
+  a, li {
+    border-radius: 100%;
+    margin: 0 2px;
+    margin-top: 20px;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    background: none;
+
+    span {
+      display: none;
+    }
+  }
+
+  .selected, .active {
+    border-color: @color;
+    background: none;
+    height: 10px;
+    width: 10px;
+  }
+
+}
+
+@media screen and ( max-width: 991px ) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    padding-top: @baseline;
+    padding-bottom: @baseline;
+  }
+}
+
+// Pagination
+
+.pagination {
+  margin: 0;
+  border: none;
+
+  li {
+    border-radius: 0;
+
+    a {
+      border: none;
+      background: #e1e1e1;
+      color: #777;
+      border-radius: 0;
+      padding: 10px 15px;
+      margin: 0 5px;
+    }
+
+    a.active, a:hover {
+      background: @color;
+      color: #fff;
+    }
+  }
+
+  li:first-child {
+    a {
+      margin-right: 5px;
+      border-radius: 0;
+    }
+  }
+
+  li:last-child {
+    a {
+      margin-left: 5px;
+      border-radius: 0;
+    }
+  }
+}
+
+/*
+** Loader
+*/
+
+.site-loader {
+  background: @color;
+  color: #fff;
+  position: fixed;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  .site-loader-inner {
+    display: table;
+    height: 100%;
+    width: 100%;
+
+    .loader-wrapper {
+      display: table-cell;
+      height: 100%;
+      width: 100%;
+      vertical-align: middle;
+      padding-left: 50px;
+
+      .loader-inner {
+        margin: 0 auto;
+        width: 60px;
+      }
+    }
+  }
+}
+
+@media screen and ( max-width: 991px ) {
+  .site-loader {
+    display: none;
+  }
+}
+
+/*
+** Sample Sections
+*/
+
+#join-us-section {
+  background-image: url( '../img/iphone-615200_1920.jpg' );
+}
+
+#services-section {
+  background-image: url('../img/entrepreneur-593358_1920.jpg');
+}
+
+#map_canvas {
+  height: 400px;
+
+  #content {
+    max-width: 300px;
+  }
+}

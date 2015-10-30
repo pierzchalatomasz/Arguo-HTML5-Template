@@ -1,0 +1,147 @@
+/*
+**
+** 1. Base Styles
+**
+*/
+
+/*
+** Body
+*/
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  text-rendering: optimizeLegibility;
+  word-spacing: normal;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/*
+** Typography
+*/
+
+body, p, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6em;
+}
+
+p {
+  font-weight: 300;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: @color;
+  .easing;
+}
+
+a:hover, a:active, a:focus {
+  color: darken( @color, 10% );
+  text-decoration: none;
+}
+
+.second-font {
+  // You can use custom font here
+}
+
+.text-ultrabold {
+  font-weight: 900;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-normal {
+  font-weight: 400;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+.text-very-light {
+  font-weight: 100;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+/*
+** Inputs
+*/
+
+input[type="text"], textarea {
+  width: 100%;
+  border: 1px solid #e1e1e1;
+  padding: 15px;
+  outline: none;
+  .easing;
+}
+
+input:focus, input:active, textarea:focus, textarea:active {
+  border-color: @color;
+}
+
+/*
+** Images
+*/
+
+img {
+  max-width: 100%;
+}
+
+/*
+** Buttons
+*/
+
+.btn {
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-width: 0;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 2px;
+  border-color: darken( @color, 10% );
+  background: @color;
+  color: #fff;
+  .easing;
+}
+
+.btn:hover {
+  background: darken( @color, 20% );
+  border-color: darken( @color, 30% );
+  color: #fff;
+}
+
+.image-section .btn, .header-section .btn {
+  border-width: 2px;
+}
+
+.btn.btn-small {
+  font-size: 9px;
+}
+
+.btn-lg {
+  padding: 15px 30px;
+}
+
+.btn.transparent {
+  background: none;
+  border: 1px solid #fff;
+}
+
+iframe {
+  border: 0;
+}

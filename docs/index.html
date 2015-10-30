@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Arguo Docs</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="line-height: 1.6em">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img class="center-block" src="img/arguo-promo.png" alt="Arguo" style="max-width: 100%;">
+      </div>
+      <div class="col-md-6">
+        <div class="jumbotron">
+          <h3>Thank you for purchasing our template!</h3>
+          <p style="font-size: 1em;">If you have some question or problem don't hesitate to ask in a comment on template page.</p>
+          <p style="font-size: 1em;"><i>- Futura Themes</i></p>
+          <p><a class="btn btn-primary btn-small" href="http://themeforest.net/user/futurathemes" role="button">Our Profile</a></p>
+        </div>
+      </div>
+    </div>
+
+    <h1>Arguo Docs</h1>
+    <p><span class="label label-info">DISTRIBUTION VERSION</span></p>
+    <p><ol>
+        <li>Unzip arguo-dist.zip.</li>
+        <li>Send unpacked files to your server via ftp or scp.</li>
+      </ol>
+    </p>
+
+    <p><span class="label label-info">DEVELOPMENT VERSION</span></p>
+
+    <h3>Directories</h3>
+
+    <p>
+      <ul>
+        <li>Development JavaScript files are located in <code>./dev/js</code>.</li>
+        <li>jQuery plugins are located in <code>./dev/js/plugins</code>.</li>
+        <li>Development LESS files are located in <code>./dev/less</code>.</li>
+      </ul>
+    </p>
+    <h3>First steps</h3>
+    <p>
+      <ol>
+        <li>Install node.js from <a href="http://nodejs.org">http://nodejs.org</a>.</li>
+        <li>Unzip arguo-dev.zip.</li>
+        <li>Change working directory to <code>./dev</code> inside template directory - type <kbd>cd path_to_template/dev</kbd> in command line.</li>
+        <li>Type <kbd>npm install</kbd> in command line to install all dependencies.</li>
+      </ol>
+    </p>
+
+    <h3>LESS / CSS</h3>
+
+    <p>
+      <ul>
+        <li>Main stylesheet is divided into separate less files which are imported in <code>./dev/less/styles.less</code> file.</li>
+        <li>To compile LESS to CSS - type <kbd>gulp less</kbd>.</li>
+        <li>It will output single <code>style.css</code> file in <code>../css</code> directory.</li>
+      </ul>
+    </p>
+
+    <h3>JS</h3>
+
+    <p>
+      <ul>
+        <li>Main JavaScript file ( <code>./dev/js/main.js</code> ) uses browserify to require modules ( located in <code>./dev/js</code> ).</li>
+        <li>To bundle up main.js modules - type <kbd>browserify js/main.js -o ../js/main.js</kbd>. It will output single main.js file in <code>../js</code> directory.</li>
+        <li>To minify main.js - type <kbd>gulp minify</kbd>. It will minify <code>../js/main.js</code> file.</li>
+        <li>jQuery plugins ( <code>./dev/js/plugins/*.js</code> ) are concatenated into one minified file.</li>
+        <li>To add custom jQuery plugins paste the file into <code>./dev/js/plugins</code> directory and type <kbd>gulp plugins</kbd>. It will output single plugins.js file in ../js directory.</li>
+      </ul>
+    </p>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+/*
+**
+** 5. Blog Styles
+**
+*/
+
+/*
+** Blog
+*/
+
+.blog-post {
+  overflow: hidden;
+  margin-bottom: @baseline * 4;
+
+  .post-thumbnail {
+    max-height: 500px;
+    overflow: hidden;
+
+    img {
+      .easing;
+    }
+
+  }
+
+  .post-content {
+    padding: 20px 0;
+  }
+
+  .post-title {
+    margin-top: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    a {
+      color: #333;
+    }
+
+    a:hover {
+      color: @color;
+    }
+  }
+
+  .post-info {
+    font-weight: 300;
+    text-transform: uppercase;
+
+    .divider {
+      padding: 0 5px;
+    }
+  }
+
+  .more-button-wrapper {
+    margin-top: @baseline * 2;
+  }
+}
+
+.blog-post:hover .post-thumbnail img {
+  .zoom;
+}
+
+.blog-post:hover .post-thumbnail .carousel img {
+  transform: none;
+}
