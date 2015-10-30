@@ -19,14 +19,14 @@ Arguo is a free HTML5 responsive website template. Built with Bootstrap, HTML5, 
  
 **LESS / CSS**
 
- - Main stylesheet is divided into separate less files which are imported in ./dev/less/styles.less file. 
+ - Main stylesheet is divided into separate less files which are imported in `./dev/less/styles.less` file. 
  - To compile LESS to CSS - type gulp less. 
- - It will output single style.css file in ../css directory.
+ - It will output single style.css file in `../css` directory.
 
 **JS**
 
-- Main JavaScript file ( ./dev/js/main.js ) uses browserify to require modules ( located in ./dev/js ).
-- To bundle up main.js modules - type browserify js/main.js -o ../js/main.js. It will output single main.js file in ../js directory.
-- To minify main.js - type gulp minify. It will minify ../js/main.js file.
-jQuery plugins ( ./dev/js/plugins/*.js ) are concatenated into one minified file.
-- To add custom jQuery plugins paste the file into ./dev/js/plugins directory and type gulp plugins. It will output single plugins.js file in ../js directory.
+- Main JavaScript file ( `./dev/js/main.js` ) uses browserify to require modules ( located in `./dev/js` ).
+- To bundle up main.js modules - type `browserify js/main.js -o ../js/main.js`. It will output single main.js file in `../js` directory.
+- To minify main.js - type `gulp minify`. It will minify `../js/main.js` file.
+jQuery plugins ( `./dev/js/plugins/*.js` ) are concatenated into one minified file.
+- To add custom jQuery plugins paste the file into `./dev/js/plugins` directory and type gulp plugins. It will output single plugins.js file in `../js` directory.
