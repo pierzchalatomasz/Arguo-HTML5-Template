@@ -3,7 +3,7 @@
 ## Arguo HTML5 Template ##
 Arguo is a free HTML5 responsive website template. Built with Bootstrap, HTML5, CSS3, LESS, Gulp and Browserify.
 
-[Demo](http://pierzchalatomasz.github.io/Arguo-HTML5-Template)
+[Demo](http://pierzchalatomasz.github.io/arguo-html5-template/)
 
 ## Docs ##
 
